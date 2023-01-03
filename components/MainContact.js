@@ -9,11 +9,7 @@ export default function Contact() {
               <div className="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden" aria-hidden="true" />
               <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
                 <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
-                  <img
-                    className="rounded-3xl object-cover object-center shadow-2xl"
-                    src="https://images.pexels.com/photos/895227/pexels-photo-895227.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt=""
-                  />
+                  
                 </div>
               </div>
             </div>
@@ -25,12 +21,12 @@ export default function Contact() {
                   Schedule a Consultation
                 </h2>
                 <p className="text-lg text-white">
-                  Life can get hectic and disorganized. Find out how we can help you get back on track and move forward.
+                  {/*  */}
                 </p>
                 <div className="ml-3 text-base text-white">
-                  <p className="text-2xl ">Amanda</p>
-                  <p>amanda@thepathhomecoaching.com</p>
-                  <p className="mt-1">Mon-Fri 8am to 6pm PST</p>
+                  <p className="text-2xl ">Marathon Plumbing</p>
+                  <p>info@marathonplumbingfallcity.com</p>
+                  <p className="mt-1">123-456-7891</p>
                 </div>
               </div>
             </div>

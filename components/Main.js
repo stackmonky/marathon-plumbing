@@ -2,7 +2,6 @@ import Contact from "./MainContact";
 import Gallery from "./Gallery";
 import Services from './MainServices.js';
 import About from "./About";
-import Mission from "./MainMissionState";
 import Footer from "./Footer";
 import Head from 'next/head';
 import NavBar from "./NavBar";
@@ -11,17 +10,24 @@ export default function Main() {
     return (
         <>
             <Head>
-                <title>The Path Home Coaching</title>
-                <meta name='description' content='Home and office organization.' />
+                <title>Marathon Plumbing Fall City</title>
+                <meta name='description' content='Residential and Commercial Plumbing Services' />
             </Head>
-            <NavBar />
-            <Header />
-            <Mission />
-            <Gallery />
-            <About />
-            <Services />
-            <Contact />
-            <Footer />
+            <div className="flex flex-row">
+                <div className="fixed">
+                    <NavBar />
+                </div>
+                <div className="ml-40">
+                    <Header />
+                    <Gallery />
+                    <About />
+                    <Services />
+                    <Contact />
+                    <Footer />
+                </div>
+
+            </div>
+
         </>
 
     )

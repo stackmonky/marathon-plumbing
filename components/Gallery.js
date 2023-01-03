@@ -1,17 +1,17 @@
 import Image from "next/image";
-import snowyhouse from '../public/snowyhouse.jpg'
-import after1 from '../public/after1.jpg'
-import before1 from '../public/before1.jpg'
+// import some before and after images
 const files = [
   {
     tag: "before",
     source:
-      before1,
+    // replace before image
+      "#",
   },
   {
     tag: "after",
     source:
-      after1,
+    // replace after image
+      "#",
   },
   // More files...
 ]
@@ -27,7 +27,7 @@ export default function Gallery() {
           {files.map((file) => (
             <li key={file.source} className="relative">
               <div className="group block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-                <Image src={file.source} alt="" className="border-solid border-x-8 border-main-color pointer-events-none object-cover h-72 w-96" />
+                {/* <Image src={file.source} alt="" className="border-solid border-x-8 border-main-color pointer-events-none object-cover h-72 w-96" /> */}
                 <p className="italic">
                   {file.tag.includes("before") ? "Before" : "After"}
                 </p>
