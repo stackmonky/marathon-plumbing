@@ -1,0 +1,26 @@
+name: cicd
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    types:
+      - "opened"
+      - "synchronize"
+    paths:
+      - ".github/workflows/cicd.yml"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  cicd:
+    name: calling reusable workflow
+    uses: stackmonky/gha-reusable-workflow/.github/workflows/cicd.yml@main
+    with:
+      service-name: thepathhome-service
+      repo-name: thepathhome
+      setup-env: false
+    secrets:
+      ASSUME_ROLE: ${{ secrets.ASSUME_ROLE }}
