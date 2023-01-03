@@ -14,7 +14,8 @@ module.exports = {
         lg: '0 8px 16px var(--tw-shadow-color)',
       },
       colors:{
-        'main-color': '#559974',
+        'main-color': '#021F70',
+        'secondary-color': '#0092D4',
         'stackmonky-primary-color': '#76B900',
       },
       transitionProperty: {

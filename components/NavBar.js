@@ -1,45 +1,76 @@
-import { useState } from "react";
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import logo from '../public/logo.svg';
+import Image from 'next/image';
+
+import { HomeIcon, UsersIcon, PhotoIcon, UserIcon, PhoneIcon, WrenchIcon } from '@heroicons/react/24/outline'
+
 const navigation = [
-    { name: 'Home', href: '#', current: false },
-    { name: 'Mission', href: '#mission', current: false },
-    { name: 'Gallery', href: '#gallery', current: false },
-    { name: 'About', href: '#about', current: false },
-    { name: 'Contact', href: '#contact', current: false },
+  { name: 'Home', icon: HomeIcon, href: '#', current: false },
+  { name: 'Services', icon: WrenchIcon, href: '#services', current: false },
+  { name: 'Gallery', icon: PhotoIcon, href: '#gallery', current: false },
+  { name: 'About', icon: UserIcon, href: '#about', current: false },
+  { name: 'Contact', icon: PhoneIcon, href: '#contact', current: false },
+]
+const secondaryNavigation = [
+  { name: 'Fall City', href: '#' },
+  { name: 'North Bend', href: '#' },
+  { name: 'Snolqualmie', href: '#' },
+  { name: 'Seattle', href: '#' },
 ]
 
 function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ')
 }
 
-
-
-export default function NavBar() {
-    const [showNav, setShowDrop] = useState(false);
-    const handleNav = (e) => {
-        setShowDrop(current => !current)
-    }
-    return (
-        <>
-            <div className={!showNav ? 'fixed z-50 rounded bg-main-color/90 shadow-lg shadow-gray-700 ' : 'transition-width transition-slowest flex fixed rounded z-50 w-full bg-main-color shadow-lg shadow-gray-700'}>
-                <button onClick={handleNav}>{!showNav ? <Bars3Icon className="h-8 w-8 md:h-12 md:w-12 text-white rounded" aria-hidden="true" />: <XMarkIcon className="h-8 w-8 md:h-12 md:w-12 text-white " aria-hidden="true" />}</button>
-                <nav className={!showNav ? 'hidden' : ' font-serif flex sm:flex-wrap '} aria-label="Sidebar">
-                    {navigation.map((item) => (
-
-                        <a
-                            key={item.name}
-                            href={item.href}
-                            className={classNames(
-                                item.current ? 'text-gray-900'  : 'text-white drop-shadow-xl  hover:bg-gray-50 hover:text-gray-900',
-                                'flex items-center md:px-3 px-1.5  py-2 text-sm font-medium rounded-md'
-                            )}
-                            aria-current={item.current ? 'page' : undefined}
-                        >
-                            <span className="truncate drop-shadow-lg shadow-white md:text-xl">{item.name}</span>
-                        </a>
-                    ))}
-                </nav>
+export default function Example() {
+  return (
+    <div className="flex flex-grow flex-col overflow-y-auto border-r border-gray-200 bg-white pt-5 pb-4">
+      <div className="flex flex-shrink-0 items-center px-4">
+        <Image
+          className="h-8 w-auto"
+          src={logo}
+          alt="Your Company"
+        />
+      </div>
+      <div className="mt-5 flex flex-grow flex-col">
+        <nav className="flex-1 space-y-8 bg-white px-2" aria-label="Sidebar">
+          <div className="space-y-1">
+            {navigation.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className={classNames(
+                  item.current ? 'bg-gray-100 text-gray-900' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
+                  'group flex items-center px-2 py-2 text-sm font-medium rounded-md'
+                )}
+              >
+                <item.icon
+                  className={classNames(
+                    item.current ? 'text-gray-500' : 'text-gray-400 group-hover:text-gray-500',
+                    'mr-3 flex-shrink-0 h-6 w-6'
+                  )}
+                  aria-hidden="true"
+                />
+                {item.name}
+              </a>
+            ))}
+          </div>
+          <div className="space-y-1">
+            <h3 className="px-3 text-sm font-medium text-gray-500" id="projects-headline">
+              Projects
+            </h3>
+            <div className="space-y-1" role="group" aria-labelledby="projects-headline">
+              {secondaryNavigation.map((item) => (
+                <p
+                  key={item.name}
+                  className="group flex items-center rounded-md px-3 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+                >
+                  <span className="truncate">{item.name}</span>
+                </p>
+              ))}
             </div>
-        </>
-    )
+          </div>
+        </nav>
+      </div>
+    </div>
+  )
 }
