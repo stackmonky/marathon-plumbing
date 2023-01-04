@@ -21,17 +21,10 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function NavBar() {
   return (
-    <div className="flex flex-grow flex-col overflow-y-auto border-r border-gray-200 bg-white pt-5 pb-4">
-      <div className="flex flex-shrink-0 items-center px-4">
-        <Image
-          className="h-8 w-auto"
-          src={logo}
-          alt="Your Company"
-        />
-      </div>
-      <div className="mt-5 flex flex-grow flex-col">
+    <div className="z-10 fixed flex flex-grow flex-col lg:mt-10 sm:mt-0 overflow-y-auto border-r border-gray-200 bg-white pt-5 pb-4">
+      <div className="">
         <nav className="flex-1 space-y-8 bg-white px-2" aria-label="Sidebar">
           <div className="space-y-1">
             {navigation.map((item) => (
@@ -54,9 +47,9 @@ export default function Example() {
               </a>
             ))}
           </div>
-          <div className="space-y-1">
+          <div className="space-y-1 ">
             <h3 className="px-3 text-sm font-medium text-gray-500" id="projects-headline">
-              Projects
+              Serving
             </h3>
             <div className="space-y-1" role="group" aria-labelledby="projects-headline">
               {secondaryNavigation.map((item) => (

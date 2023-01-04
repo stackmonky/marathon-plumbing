@@ -14,10 +14,8 @@ export default function Main() {
                 <meta name='description' content='Residential and Commercial Plumbing Services' />
             </Head>
             <div className="flex flex-row">
-                <div className="fixed">
-                    <NavBar />
-                </div>
-                <div className="ml-40">
+                <NavBar />
+                <div className="m-auto">
                     <Header />
                     <Gallery />
                     <About />
