@@ -56,7 +56,7 @@ export default function Services() {
 
       {/* Overlapping cards */}
       <section
-        className="relative z-10 mx-auto -mt-32 max-w-7xl px-4 pb-32 sm:px-6 lg:px-8"
+        className="relative mx-auto -mt-32 max-w-7xl px-4 pb-32 sm:px-6 lg:px-8"
         aria-labelledby="contact-heading"
       >
         <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-2 lg:gap-y-0 lg:gap-x-20">
