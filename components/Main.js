@@ -1,5 +1,4 @@
 import Contact from "./MainContact";
-import Gallery from "./Gallery";
 import Services from './MainServices.js';
 import About from "./About";
 import Footer from "./Footer";
@@ -17,7 +16,6 @@ export default function Main() {
                 <NavBar />
                 <div className="m-auto">
                     <Header />
-                    <Gallery />
                     <About />
                     <Services />
                     <Contact />

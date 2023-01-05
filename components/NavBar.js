@@ -6,7 +6,6 @@ import { HomeIcon, UsersIcon, PhotoIcon, UserIcon, PhoneIcon, WrenchIcon } from 
 const navigation = [
   { name: 'Home', icon: HomeIcon, href: '#', current: false },
   { name: 'Services', icon: WrenchIcon, href: '#services', current: false },
-  { name: 'Gallery', icon: PhotoIcon, href: '#gallery', current: false },
   { name: 'About', icon: UserIcon, href: '#about', current: false },
   { name: 'Contact', icon: PhoneIcon, href: '#contact', current: false },
 ]
@@ -23,7 +22,7 @@ function classNames(...classes) {
 
 export default function NavBar() {
   return (
-    <div className="z-10 fixed flex flex-grow flex-col lg:mt-10 sm:mt-0 overflow-y-auto border-r border-gray-200 bg-white pt-5 pb-4">
+    <div className="z-10 hidden  md:flex fixed flex-grow flex-col lg:mt-10 sm:mt-0 overflow-y-auto border-r border-gray-200 bg-white pt-5 pb-4">
       <div className="">
         <nav className="flex-1 space-y-8 bg-white px-2" aria-label="Sidebar">
           <div className="space-y-1">

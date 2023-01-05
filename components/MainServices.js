@@ -5,31 +5,36 @@ import snowyhouse from '../public/snowyhouse.jpg';
 
 const supportLinks = [
   {
-    name: 'Home Organization',
+    name: 'Residential',
     href: '#',
     description:
-      'Any Room of Your home where you feel needs less clutter, more flow, simplicity and calmness.',
+      'From Leaking Faucets to Wells, if you need it installed, fixed, or upgraded, I make it hassle free.',
     icon: HomeIcon,
     listIcon: CheckIcon,
     areas:[
-      'Bedroom',
-      'Kitchen/Pantry',
-      'Bathroom',
-      'Laundry',
-      'Closets',
-      'Kids Room',
-      'Playroom',
-      'Home Office',
+      'Emergencies',
+      'Clogs and Drains',
+      'Installs, Upgrades and Repairs',
+      'Leaky Toilets, Faucets and Pipes',
+      'Septic Systems',
+      'Water Heaters',
+      'Well Pumps',
     ]
   },
   {
-    name: 'Office Organization',
+    name: 'Commercial',
     href: '#',
     description:
-      'Home Office Organization is crucial to staying productive for not only yourself but also for the projects you are tasked to complete. If you work from home and feel like your space needs a refresh or it never really worked for you in the first place, we can fix that. Lets create a workspace that you look forward to spending time in. ',
+      'Office Buildings, Work sites, Venues and everything in between. Providing adequate plumbing to any sort of establishment is important. We can handle and job big or small when it comes to your place of business',
     icon: BuildingOffice2Icon,
     listIcon: CheckIcon,
-    areas: [],
+    areas: ['Emergencies',
+      'Clogs and Drains',
+      'Installs, Upgrades and Repairs',
+      'Leaky Toilets, Faucets and Pipes',
+      'Cleaning and Mainteinance'
+    
+    ],
   },
 ]
 
@@ -37,19 +42,19 @@ export default function Services() {
   return (
     <div className="bg-white">
       {/* Header */}
-      <div className="relative bg-gray-800 pb-32">
+      <div id='services' className="relative bg-gray-800 pb-32">
         <div className="absolute inset-0">
-          <Image
+          <img
             className="h-full w-full object-cover"
-            src={snowyhouse}
+            src='https://plus.unsplash.com/premium_photo-1664301132849-f52af765df79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGx1bWJlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
             alt=""
           />
           <div className="absolute inset-0 bg-main-color/60 mix-blend-multiply" aria-hidden="true" />
         </div>
         <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-5xl">Organizational Services</h1>
+          <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-5xl">Services</h1>
           <p className="mt-6 max-w-3xl text-xl text-gray-300">
-            When you schedule with me you can expect a clear and concise plan. The first step is to discuss the goals of the space. Next we will purge and sort any items that no longer serve a purpose. After that, we will organize and clean. Finally, we walk through and admire the functionality and purpose of the newly organized space. 
+           Reach out! With Marathon Plumbing, We come runnin'! 
           </p>
         </div>
       </div>

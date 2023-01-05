@@ -50,7 +50,7 @@ const navigation = {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-center text-base text-gray-400">&copy; 2022 The Path Home Coaching, Inc. All rights reserved.</p>
+          <p className="mt-8 text-center text-base text-gray-400">&copy; 2022 Marathon Plumbing, Inc. All rights reserved.</p>
           <p className="mt-8 text-center text-base text-gray-400">Created and Designed by <a className="hover:text-stackmonky-primary-color" href="http://stackmonky.com">StackMonky</a></p>
         </div>
       </footer>
