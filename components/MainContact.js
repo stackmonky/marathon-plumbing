@@ -13,7 +13,6 @@ export default function Contact() {
                     className=" z-10 rounded-3xl object-cover object-center shadow-2xl"
                     src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                     alt=""
-                   
                   />
                 </div>
               </div>
