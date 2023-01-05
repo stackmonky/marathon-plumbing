@@ -1,7 +1,5 @@
 import { HomeIcon, BuildingOffice2Icon } from '@heroicons/react/24/outline';
 import { CheckIcon } from '@heroicons/react/20/solid'
-import Image from 'next/image';
-import snowyhouse from '../public/snowyhouse.jpg';
 
 const supportLinks = [
   {

@@ -8,7 +8,7 @@ export default function About() {
                 Committed to Service!
               </p>
               <p className="mx-auto mt-5 max-w-2xl text-xl text-gray-500 font-serif leading-relaxed">
-                Marathon Plumbing is committed to providing the very best of proffessional plumbing services. We take the upmost care when it comes to identifying the problem and quickly providing the solution.
+                Marathon Plumbing is committed to providing the very best of professional plumbing services. We take the upmost care when it comes to identifying the problem and quickly providing the solution.
               </p>
               <p className="mx-auto mt-5 max-w-2xl text-xl text-gray-500 font-serif leading-relaxed">
                 Whether Residential or Commercial, Standard Maintenance or an Emergency, Marathon Plumbing has you covered.
