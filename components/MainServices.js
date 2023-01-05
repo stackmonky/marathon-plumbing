@@ -54,7 +54,7 @@ export default function Services() {
         <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-5xl">Services</h1>
           <p className="mt-6 max-w-3xl text-xl text-gray-300">
-           Reach out! With Marathon Plumbing, We come runnin'! 
+           Reach out! With Marathon Plumbing, We come runnin! 
           </p>
         </div>
       </div>
