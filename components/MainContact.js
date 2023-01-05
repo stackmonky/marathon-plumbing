@@ -29,8 +29,9 @@ export default function Contact() {
                 </p>
                 <div className="ml-3 text-base text-white">
                   <p className="text-3xl ">Marathon Plumbing</p>
-                  <p className="text-xl">info@marathonplumbingfallcity.com</p>
-                  <p className="mt-1 text-lg">123-456-7891</p>
+                  <p className="text-xl">Bill Green</p>
+                  <p className="text-xl">bgmarathon@gmail.com</p>
+                  <p className="mt-1 text-lg">425-773-1683</p>
                 </div>
               </div>
             </div>

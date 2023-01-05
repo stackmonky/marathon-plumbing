@@ -1,6 +1,6 @@
 import Image from "next/image";
 import logo from '../public/logo.svg';
-import NavBar from "./NavBar";
+
 export default function Header() {
     return (
         <div className="bg-main-color">
